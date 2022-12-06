@@ -33,4 +33,4 @@ Note - please do not hesitate to contact me in case if there would be any questi
 
 ### Auth User
   - In order to auth your user, copy token placed in folder "token.txt"
-  - Past the token into HEADER, name it [Authorization] during the request. `Authorization = [JWT KEY]`
+  - Past the token into HEADER, name it "Authorization" during the request. `Authorization = [JWT KEY]`
