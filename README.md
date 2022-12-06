@@ -31,6 +31,6 @@ Note - please do not hesitate to contact me in case if there would be any questi
 
 `http://localhost:8000/type/create` **[POST]** creates pizza type [Parameters 'name' => 'required|min:1' ]
 
-### Auth User
+## Auth User
   - In order to auth your user, copy token placed in folder "token.txt"
   - Past the token into HEADER, name it "Authorization" during the request. `Authorization = [JWT KEY]`
