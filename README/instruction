@@ -1,0 +1,34 @@
+
+          Run PHP project
+=====================================
+
+1. Open the root file of php project
+2. Open the terminal in this file and type $ php -S localhost:8000 -t public/
+3. Install dependencies, run $ composer install
+4. Upload .sql file into your database;
+
+
+          API endpoints
+=====================================
+
+1. Pizza endpoints [Auth needed]
+--------------------
+http://localhost:8000/pizza [GET] --> returns all pizza that belongs to concrete users
+http://localhost:8000/pizza/{id} [GET] --> returns concrete pizza
+http://localhost:8000/pizza/create [POST] --> creates pizza [[[Parameters: 'name' => 'required', 'pizza_type_id'=> 'required|numeric', 'quantity' => 'required|numeric|min:1']]]
+http://localhost:8000/pizza/update/{id} [POST] --> updates pizza [[[Parameters: 'name' => 'max:200', 'pizza_type_id'=> 'numeric', 'quantity' => 'numeric|min:1']]]
+http://localhost:8000/pizza/delete/{id} [DELETE] --> delete pizza
+
+
+2. Pizza Type endpoints [Auth is not needed]
+-----------------------
+http://localhost:8000/type [GET] --> returns all pizza type
+http://localhost:8000/type/{id} [GET] --> returns concrete pizza
+http://localhost:8000/type/create [POST] --> creates pizza type [[[Parameters 'name' => 'required|min:1' ]]]
+
+
+              Auth user
+=====================================
+
+1. In order to auth your user, copy token placed within folder "token.txt"
+2. Past that token into HEADER, name it [Authorization] during the request. Example <<< Authorization = [JWT KEY] >>>

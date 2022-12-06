@@ -1,0 +1,23 @@
+{
+    "name": "m3duza/php-task",
+    "description": "The is for only demonstration purposes",
+    "type": "project",
+    "license": "None",
+    "require": {
+        "bramus/router": "~1.6",
+        "ext-json": "*",
+        "rakit/validation": "^1.4",
+        "firebase/php-jwt": "^6.0",
+        "ext-http": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
